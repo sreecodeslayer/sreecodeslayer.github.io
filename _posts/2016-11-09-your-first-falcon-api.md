@@ -38,11 +38,14 @@ If you face an error where the terminal is probably stating that it doesn't know
 ```bash
 $ pip install virtualenv
 ```
-and then run the command again, you should be good to continue.
+and then run the command again, you should be good to continue.  
+
 * Now we need create the `<some crazy named>.py` that will be served by WSGI servers like Gunicorn. In the file, lemme call mine as `myapi.py` itself so that it makes it easier to relate.
+
 * Now import these two for now.
 
 ```python
+# myapi.py
 import falcon  
 import json
 ```

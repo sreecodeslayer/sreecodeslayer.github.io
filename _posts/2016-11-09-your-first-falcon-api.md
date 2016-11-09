@@ -48,28 +48,28 @@ Alright then, let's dive into creating our first Falcon app that listens to some
 
 5. Now import these two for now.
 
-  ```python
-  import falcon
+  ```
+  import falcon  
   import json
   ```
 
 6. So, in Falcon, our api apps are nothing but instances of the falcon.API() which are run WSGI Servers. So next we need to do the same for our `myapi` app.
 
-  ```python
+  ```
   api = falcon.API()
   ```
 
 7. Now we create a Resource class that is going to handle the requests.
 
-  ```python
+  ```
   # ... imports and api instance ...
   class MyAPI(object):
-  # ... class body ...
+    # ... class body ...
   ```
 
 8. To handle the `GET` requests, we need to define `on_get()` function. So let's see how this is done.
 
-  ```python
+  ```
   class MyAPI(object):
     def on_get(self, req, resp):
       # ... do the fun here ...
@@ -77,7 +77,7 @@ Alright then, let's dive into creating our first Falcon app that listens to some
 
 9. Since there is nothing magical happening in this app of ours, let's just say everything is fine with request, and hence sent a `HTTP 200, OK` response. To do this,
 
-  ```python
+  ```
   def on_get(self, req, resp):
     resp.status = falcon.HTTP_200 # all good : OK
     resp.body = json.dumps({
@@ -87,7 +87,7 @@ Alright then, let's dive into creating our first Falcon app that listens to some
 
 10. All that we need to do now is add a url route so that we can map our Resource class to do the job when that url(route) is requested by the client. To do this,
 
-  ```python
+  ```
   api.add_route('/myapi',MyAPI())
   ```
 11. With this, the app will basically respond to the `GET` request on `/myapi` url route.

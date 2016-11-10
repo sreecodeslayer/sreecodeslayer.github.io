@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wrinting your First Python Falcon API
+title: Writing your First Python Falcon API
 date: 2016-11-09T00:00:00.000Z
 excerpt: A tutorial to help you write your first API.
 project: true

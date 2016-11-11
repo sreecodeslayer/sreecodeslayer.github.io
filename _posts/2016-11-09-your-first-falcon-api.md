@@ -97,8 +97,12 @@ api.add_route('/myapi',MyAPI())
 ```bash
 $ pip install pipreqs
 ```
-* Assuming you have not wandered off from the project root in the terminal, type this command to generate requirements file using `pipreqs`
-* Now
+* Assuming you have not wandered off from the project root in the terminal, type this command to generate requirements file using `pipreqs` in the root directory.
+
+```bash
+$ pipreqs ./
+```
+* Now install the requirements.
 
 ```bash
 $ pip install -r requirements.txt

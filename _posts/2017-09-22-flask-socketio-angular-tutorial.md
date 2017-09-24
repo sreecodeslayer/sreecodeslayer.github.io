@@ -298,3 +298,5 @@ python app.py
 ```
 
 And that's all there is to it. Hope this helped you out.
+
+If you wish to look at the source all at once, please feel free to visit the [repository](https://github.com/sreecodeslayer/flask_socketio_angularjs)

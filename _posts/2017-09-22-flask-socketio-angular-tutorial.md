@@ -3,7 +3,7 @@ layout: post
 title: Flask-SocketIO, AngularJS, ngRoute application
 date: 2017-09-22T00:00:00.000Z
 excerpt: A single page application using Flask-SocketIO and AngularJS
-project: false
+project: true
 tag:
   - Programming
   - Python
@@ -287,3 +287,9 @@ This block configures the AngularJS to use ngRoute module, to direct user routes
 If you look at the `sidebar` that we wrote in `index.html`, the nav links are a bit messed up. i.e., they all are prefixed with a `#!`, which basically is how AngularJS(version 1.6 and above) looks for URL Routes. Refer [here](https://stackoverflow.com/questions/41226122/url-hash-bang-prefix-instead-of-simple-hash-in-angular-1-6).
 
 With this, our app should be ready. Let's fire up the server and see how it goes. To do this, simply run the `app.py` as you would normally run a python script.
+
+```
+python app.py
+```
+
+And that's all there is to it. Hope this helped you out.

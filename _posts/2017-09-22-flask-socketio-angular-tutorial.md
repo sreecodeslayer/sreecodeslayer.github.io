@@ -3,6 +3,7 @@ layout: post
 title: Flask-SocketIO, AngularJS, ngRoute application
 date: 2017-09-22T00:00:00.000Z
 excerpt: A single page application using Flask-SocketIO and AngularJS
+post: true
 project: true
 tag:
   - Programming
@@ -34,7 +35,7 @@ While the client-server is connected, both server and client can send any number
 
 SocketIO is a Javascript library that helps clients initiate Websocket connection and then communicate with server.
 
-## Let's being
+## Let's begin
 
 What our finished project structure would like:
 
@@ -47,9 +48,9 @@ All the things that we do in this tutorial are for demo purpose and doesn't actu
 Before we begin, let's set the python environment. I have used Python 3 here, as eventually we all will migrate to it from Python 2. I will be using `virtualenv`, but you can use your own methods.
 
 ```bash
-pip install virtualenv
-virtualenv py3env
-source py3env/bin/activate
+$ pip install virtualenv
+$ virtualenv py3env
+$ source py3env/bin/activate
 ```
 
 Requirements:
@@ -59,6 +60,10 @@ Flask==0.12.2
 Flask-SocketIO==2.9.2
 gevent==1.2.2
 gevent-websocket==0.10.1
+```
+
+```bash
+$ pip install flask flask-socketio gevent gevent-websocket
 ```
 
 
@@ -105,7 +110,7 @@ def connected():
 
 @socketio.on('disconnect', namespace='/test')
 def disconnected():
-	print(Client disconnected)
+	print('Client disconnected')
 
 @socketio.on('uuid', namespace='/test')
 def send_uuid():

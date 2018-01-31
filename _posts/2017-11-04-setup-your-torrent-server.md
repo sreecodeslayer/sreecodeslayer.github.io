@@ -4,7 +4,6 @@ title: Setup a Tracker server and a seeding client in minutes
 date: 2017-11-04T00:00:00.000Z
 excerpt: Minimum code, maximum torrent love.
 post: true
-project: true
 tag:
   - Programming
   - Python
